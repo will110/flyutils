@@ -1,0 +1,25 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "O2a7a1WN9/IOkEsC5qgWPFenPcg=",
+			"path": "github.com/aead/chacha20/chacha",
+			"revision": "8b13a72661dae6e9e5dea04f344f0dc95ea29547",
+			"revisionTime": "2018-07-09T15:02:44Z"
+		},
+		{
+			"checksumSHA1": "NaPKWo2/NhJLk/+GrsBiAL/V6J4=",
+			"path": "golang.org/x/sys/cpu",
+			"revision": "fae7ac547cb717d141c433a2a173315e216b64c4",
+			"revisionTime": "2019-07-11T09:16:12Z"
+		},
+		{
+			"checksumSHA1": "fjQ4DplQT+J0AFOeZ8d8nxCgRjg=",
+			"path": "lukechampine.com/frand",
+			"revision": "366c9cca73d3df4eb0c2b6f0389e0d7f3a0728da",
+			"revisionTime": "2019-07-08T17:14:30Z"
+		}
+	],
+	"rootPath": "github.com/flyutils"
+}
