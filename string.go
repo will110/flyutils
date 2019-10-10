@@ -9,9 +9,9 @@ import (
 	"math/big"
 )
 
-/*
-描述：查找字符串在另一个字符串中，第一次出现的位置，没有找到子串，则返回-1
-注意：对大小写敏感
+/**
+描述：查找字符串在另一个字符串中，第一次出现的位置，没有找到子串，则返回-1；
+注意：对大小写敏感；
 参数：
 	str: 搜索的字符串
 	sub: 要查找的字符串
@@ -36,8 +36,8 @@ func StrPos(sub,str string) int {
 }
 
 /**
-描述：查找字符串在另一个字符串中，最后一次出现的位置, 没有找到子串，则返回-1
-注意：对大小写敏感
+描述：查找字符串在另一个字符串中，最后一次出现的位置, 没有找到子串，则返回-1；
+注意：对大小写敏感；
 参数：
 	str: 搜索的字符串
 	sub: 要查找的字符串
@@ -61,10 +61,10 @@ func StrLastPos(sub,str string) int {
 }
 
 /**
-描述：截取字符串，从start开始截取，截取length长度
+描述：截取字符串，从start开始截取，截取length长度；
 参数：
 	str: 要截取的字符串
-	start: 开始的位置
+	start: 开始的位置，start为正数时从前面开始截取，start为负数时从后面开始截取
 	cutOutLen： 截取的长度
  */
 func Substr(str string, start int, cutOutLen ...int) string {
@@ -130,7 +130,7 @@ func Substr(str string, start int, cutOutLen ...int) string {
 }
 
 /**
-描述：字符串反转
+描述：字符串反转；
 参数：
 	str: 要反转的字符串
  */
@@ -146,7 +146,7 @@ func StrReverse(str string) string {
 }
 
 /**
-描述：字符串md5
+描述：字符串md5；
 参数：
 	str: 字符串
  */
@@ -155,7 +155,7 @@ func StrMd5(str string) string {
 }
 
 /**
-描述：生成随机的字符串
+描述：生成随机的字符串；
 参数：
 	len: 生成字符串的长度
  */

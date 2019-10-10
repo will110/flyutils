@@ -1,10 +1,10 @@
 package flyutils
 
 /**
-描述：删除slice中的某个元素
+描述：删除slice中的某个元素；
 参数：
 	val: 要删除的元素
-	sliceList： slice
+	sliceList： 切片列表
  */
 func SliceDeleteString(val string, sliceList []string) []string {
 	if len(sliceList) == 0 {
@@ -247,10 +247,10 @@ func SliceDeleteFloat64(val float64, sliceList []float64) []float64 {
 }
 
 /**
-描述：判断slice中是否存在某个元素
+描述：判断slice中是否存在某个元素；
 参数：
 	v: 要查找的元素
-	sliceList： slice
+	sliceList： 切片列表
 */
 func InSliceString(v string, sliceList []string) bool {
 	for k := range sliceList {
@@ -383,10 +383,10 @@ func InSliceFloat64(v float64, sliceList []float64) bool {
 }
 
 /**
-描述：获取slice1在slice2差值，即返回差集
+描述：获取slice1在slice2差值，即返回差集；
 参数：
-	slice1: 第一个slice列表
-	slice2： 第二个slice列表
+	slice1: 第一个切片列表
+	slice2： 第二个切片列表
 */
 func SliceDiffString(slice1, slice2 []string) []string {
 	diffSlice := make([]string, 0, len(slice2))
@@ -532,10 +532,10 @@ func SliceDiffFloat64(slice1, slice2 []float64) []float64 {
 }
 
 /**
-描述：获取slice1与slice2共同存在的值，即返回交集
+描述：获取slice1与slice2共同存在的值，即返回交集；
 参数：
-	slice1: 第一个slice列表
-	slice2： 第二个slice列表
+	slice1: 第一个切片列表
+	slice2： 第二个切片列表
 */
 func SliceIntersectString(slice1, slice2 []string) []string {
 	intersectSlice := make([]string, 0, 8)
@@ -681,9 +681,9 @@ func SliceIntersectFloat64(slice1, slice2 []float64) []float64 {
 }
 
 /**
-描述：返回sliceList元素所有元素之和
+描述：返回sliceList元素所有元素之和；
 参数：
-	sliceList: slice列表
+	sliceList: 切片列表
 */
 func SliceSumInt8(sliceList []int8) int64 {
 	var sum int64
@@ -795,7 +795,7 @@ func SliceSumFloat64(sliceList []float64) float64 {
 }
 
 /**
-描述：去掉重复的元素，并返回一个新的slice
+描述：去掉重复的元素，并返回一个新的slice；
 参数：
 	sliceList：要处理的切片
  */

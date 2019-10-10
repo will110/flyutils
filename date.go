@@ -6,15 +6,15 @@ import (
 )
 
 /**
-描述：获取每月的几号
+描述：获取每月的几号；
  */
 func GetMonthDay() string {
 	dayInt := time.Now().Day()
 	return strconv.Itoa(dayInt)
 }
 
-/*
-描述：获取星期几
+/**
+描述：获取星期几；
 返回的格式：
 	星期一 = 1
 	星期二 = 2
