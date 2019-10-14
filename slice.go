@@ -13,7 +13,7 @@ func SliceDeleteString(val string, sliceList []string) []string {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]string, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -33,7 +33,7 @@ func SliceDeleteInt(val int, sliceList []int) []int {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]int, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -53,7 +53,7 @@ func SliceDeleteInt8(val int8, sliceList []int8) []int8 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]int8, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -73,7 +73,7 @@ func SliceDeleteInt16(val int16, sliceList []int16) []int16 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]int16, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -93,7 +93,7 @@ func SliceDeleteInt32(val int32, sliceList []int32) []int32 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]int32, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -113,7 +113,7 @@ func SliceDeleteInt64(val int64, sliceList []int64) []int64 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]int64, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -133,7 +133,7 @@ func SliceDeleteUint8(val uint8, sliceList []uint8) []uint8 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]uint8, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -153,7 +153,7 @@ func SliceDeleteUint16(val uint16, sliceList []uint16) []uint16 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]uint16, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -173,7 +173,7 @@ func SliceDeleteUint32(val uint32, sliceList []uint32) []uint32 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]uint32, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -193,7 +193,7 @@ func SliceDeleteUint64(val uint64, sliceList []uint64) []uint64 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]uint64, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -213,7 +213,7 @@ func SliceDeleteFloat32(val float32, sliceList []float32) []float32 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]float32, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
@@ -233,7 +233,7 @@ func SliceDeleteFloat64(val float64, sliceList []float64) []float64 {
 
 	index := 0
 	endIndex := len(sliceList) - 1
-	result := sliceList[:0]
+	result := make([]float64, 0, len(sliceList))
 	for k := range sliceList {
 		if sliceList[k] == val {
 			result = append(result, sliceList[index:k]...)
